@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Список задач{% endblock %}
+
+{% block content %}
+<section class="page-heading">
+    <div>
+        <p class="eyebrow">Планирование работы</p>
+        <h1>Список задач</h1>
+        <p class="muted">Все задачи проекта в одном месте.</p>
+    </div>
+    <a class="button" href="{% url 'tasks:create' %}">+ Новая задача</a>
+</section>
+
+{% if tasks %}
+    <div class="task-list">
+        {% for task in tasks %}
+            <article class="task-card">
+                <div class="task-card-top">
+                    <span class="status status-{{ task.status }}">{{ task.get_status_display }}</span>
+                    <span class="muted">№ {{ task.pk }}</span>
+                </div>
+                <h2><a href="{% url 'tasks:detail' task.pk %}">{{ task.title }}</a></h2>
+                <p>{{ task.short_description }}</p>
+                <div class="task-meta">
+                    <span>Тип: {{ task.task_type.name }}</span>
+                    <span>Результат: {{ task.result.name }}</span>
+                </div>
+                <div class="card-actions">
+                    <a href="{% url 'tasks:detail' task.pk %}">Подробнее</a>
+                    <a href="{% url 'tasks:update' task.pk %}">Редактировать</a>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+{% else %}
+    <div class="empty-state">
+        <h2>Пока задач нет</h2>
+        <p>Создайте первую задачу.</p>
+        <a class="button" href="{% url 'tasks:create' %}">Создать задачу</a>
+    </div>
+{% endif %}
+{% endblock %}

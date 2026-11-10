@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Менеджер задач{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="logo" href="{% url 'tasks:list' %}">TaskBoard</a>
+            <nav>
+                <a href="{% url 'tasks:list' %}">Задачи</a>
+                <a class="button button-small" href="{% url 'tasks:create' %}">Создать задачу</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container main">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+        <div class="container">Домашнее задание №58</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{{ task.title }}{% endblock %}
+
+{% block content %}
+<div class="detail-card">
+    <a class="back-link" href="{% url 'tasks:list' %}">← К списку задач</a>
+    <div class="task-card-top">
+        <span class="status status-{{ task.status }}">{{ task.get_status_display }}</span>
+        <span class="muted">Задача № {{ task.pk }}</span>
+    </div>
+    <h1>{{ task.title }}</h1>
+    <p class="lead">{{ task.short_description }}</p>
+    {% if task.description %}<p>{{ task.description }}</p>{% endif %}
+    <dl class="details">
+        <dt>Тип</dt><dd>{{ task.task_type.name }}</dd>
+        <dt>Результат</dt><dd>{{ task.result.name }}</dd>
+        <dt>Создана</dt><dd>{{ task.created_at|date:"d.m.Y H:i" }}</dd>
+        <dt>Обновлена</dt><dd>{{ task.updated_at|date:"d.m.Y H:i" }}</dd>
+    </dl>
+    <a class="button" href="{% url 'tasks:update' task.pk %}">Редактировать</a>
+</div>
+{% endblock %}

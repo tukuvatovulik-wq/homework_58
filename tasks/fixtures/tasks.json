@@ -1,0 +1,296 @@
+[
+  {
+    "model": "tasks.tasktype",
+    "pk": 1,
+    "fields": {
+      "name": "Баг"
+    }
+  },
+  {
+    "model": "tasks.tasktype",
+    "pk": 2,
+    "fields": {
+      "name": "Улучшение"
+    }
+  },
+  {
+    "model": "tasks.tasktype",
+    "pk": 3,
+    "fields": {
+      "name": "Документация"
+    }
+  },
+  {
+    "model": "tasks.taskresult",
+    "pk": 1,
+    "fields": {
+      "name": "Исправлено"
+    }
+  },
+  {
+    "model": "tasks.taskresult",
+    "pk": 2,
+    "fields": {
+      "name": "Ожидает проверки"
+    }
+  },
+  {
+    "model": "tasks.taskresult",
+    "pk": 3,
+    "fields": {
+      "name": "Не воспроизведено"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 1,
+    "fields": {
+      "title": "Ошибка авторизации",
+      "short_description": "Необходимо исправить найденную ошибку.",
+      "description": "Подробное описание задачи: ошибка авторизации.",
+      "status": "closed",
+      "task_type": 1,
+      "result": 1,
+      "created_at": "2026-09-04T10:00:00Z",
+      "updated_at": "2026-10-04T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 2,
+    "fields": {
+      "title": "Добавить фильтр задач",
+      "short_description": "Добавить удобный фильтр для списка задач.",
+      "description": "Подробное описание задачи: добавить фильтр задач.",
+      "status": "new",
+      "task_type": 2,
+      "result": 2,
+      "created_at": "2026-09-07T10:00:00Z",
+      "updated_at": "2026-10-07T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 3,
+    "fields": {
+      "title": "Обновить документацию",
+      "short_description": "Описать новые возможности проекта.",
+      "description": "Подробное описание задачи: обновить документацию.",
+      "status": "in_progress",
+      "task_type": 3,
+      "result": 2,
+      "created_at": "2026-09-10T10:00:00Z",
+      "updated_at": "2026-11-10T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 4,
+    "fields": {
+      "title": "Ошибка сохранения формы",
+      "short_description": "Необходимо исправить найденную ошибку.",
+      "description": "Подробное описание задачи: ошибка сохранения формы.",
+      "status": "closed",
+      "task_type": 1,
+      "result": 1,
+      "created_at": "2026-09-13T10:00:00Z",
+      "updated_at": "2026-10-13T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 5,
+    "fields": {
+      "title": "Улучшить список задач",
+      "short_description": "Добавить сортировку списка задач.",
+      "description": "Подробное описание задачи: улучшить список задач.",
+      "status": "in_progress",
+      "task_type": 2,
+      "result": 2,
+      "created_at": "2026-09-16T10:00:00Z",
+      "updated_at": "2026-10-16T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 6,
+    "fields": {
+      "title": "Проверить адаптивность",
+      "short_description": "Проверить отображение сайта на телефоне.",
+      "description": "Подробное описание задачи: проверить адаптивность.",
+      "status": "new",
+      "task_type": 2,
+      "result": 3,
+      "created_at": "2026-09-19T10:00:00Z",
+      "updated_at": "2026-11-19T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 7,
+    "fields": {
+      "title": "Баг отображения даты",
+      "short_description": "Исправить отображение даты в карточке.",
+      "description": "Подробное описание задачи: баг отображения даты.",
+      "status": "closed",
+      "task_type": 1,
+      "result": 1,
+      "created_at": "2026-09-22T10:00:00Z",
+      "updated_at": "2026-10-22T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 8,
+    "fields": {
+      "title": "Написать инструкцию",
+      "short_description": "Подготовить инструкцию для пользователя.",
+      "description": "Подробное описание задачи: написать инструкцию.",
+      "status": "new",
+      "task_type": 3,
+      "result": 2,
+      "created_at": "2026-09-25T10:00:00Z",
+      "updated_at": "2026-10-25T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 9,
+    "fields": {
+      "title": "Ошибка поиска",
+      "short_description": "Необходимо исправить найденную ошибку.",
+      "description": "Подробное описание задачи: ошибка поиска.",
+      "status": "in_progress",
+      "task_type": 1,
+      "result": 2,
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-11-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 10,
+    "fields": {
+      "title": "Добавить подсказки",
+      "short_description": "Добавить подсказки к полям формы.",
+      "description": "Подробное описание задачи: добавить подсказки.",
+      "status": "new",
+      "task_type": 2,
+      "result": 2,
+      "created_at": "2026-09-04T10:00:00Z",
+      "updated_at": "2026-10-04T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 11,
+    "fields": {
+      "title": "Проверить права доступа",
+      "short_description": "Проверить доступ к разделам проекта.",
+      "description": "Подробное описание задачи: проверить права доступа.",
+      "status": "closed",
+      "task_type": 1,
+      "result": 3,
+      "created_at": "2026-09-07T10:00:00Z",
+      "updated_at": "2026-10-07T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 12,
+    "fields": {
+      "title": "Уточнить описание проекта",
+      "short_description": "Обновить описание основных разделов.",
+      "description": "Подробное описание задачи: уточнить описание проекта.",
+      "status": "in_progress",
+      "task_type": 3,
+      "result": 2,
+      "created_at": "2026-09-10T10:00:00Z",
+      "updated_at": "2026-11-10T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 13,
+    "fields": {
+      "title": "Ошибка валидации",
+      "short_description": "Необходимо исправить найденную ошибку.",
+      "description": "Подробное описание задачи: ошибка валидации.",
+      "status": "new",
+      "task_type": 1,
+      "result": 2,
+      "created_at": "2026-09-13T10:00:00Z",
+      "updated_at": "2026-10-13T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 14,
+    "fields": {
+      "title": "Улучшить карточку задачи",
+      "short_description": "Сделать карточку задачи понятнее.",
+      "description": "Подробное описание задачи: улучшить карточку задачи.",
+      "status": "closed",
+      "task_type": 2,
+      "result": 1,
+      "created_at": "2026-09-16T10:00:00Z",
+      "updated_at": "2026-10-16T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 15,
+    "fields": {
+      "title": "Добавить страницу помощи",
+      "short_description": "Создать страницу с ответами на вопросы.",
+      "description": "Подробное описание задачи: добавить страницу помощи.",
+      "status": "new",
+      "task_type": 3,
+      "result": 2,
+      "created_at": "2026-09-19T10:00:00Z",
+      "updated_at": "2026-11-19T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 16,
+    "fields": {
+      "title": "Проверить форму задачи",
+      "short_description": "Проверить корректную работу формы.",
+      "description": "Подробное описание задачи: проверить форму задачи.",
+      "status": "in_progress",
+      "task_type": 1,
+      "result": 2,
+      "created_at": "2026-09-22T10:00:00Z",
+      "updated_at": "2026-10-22T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 17,
+    "fields": {
+      "title": "Оптимизировать запросы",
+      "short_description": "Сократить количество запросов к базе.",
+      "description": "Подробное описание задачи: оптимизировать запросы.",
+      "status": "closed",
+      "task_type": 2,
+      "result": 1,
+      "created_at": "2026-09-25T10:00:00Z",
+      "updated_at": "2026-10-25T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 18,
+    "fields": {
+      "title": "Исправить текст подсказки",
+      "short_description": "Обновить текст подсказки в форме.",
+      "description": "Подробное описание задачи: исправить текст подсказки.",
+      "status": "new",
+      "task_type": 3,
+      "result": 2,
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-11-01T12:00:00Z"
+    }
+  }
+]
